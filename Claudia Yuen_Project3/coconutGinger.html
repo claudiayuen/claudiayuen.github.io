@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ginger Lemon</title>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Montserrat|Proza+Libre:400,400i" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body {
+			background-color: white;
+		}
+
+/*********TYPOGRAPHY**********/
+
+		html {
+    		font-size: 10px;
+		}
+
+		h2 {
+			font-size: 2.7rem;
+			font-family: 'Proza Libre', sans-serif;
+			color: #333333;
+			font-style: italic;
+		}
+
+		p {
+			font-size: 1.4rem;
+			font-family: 'Droid Serif', serif;
+			color: #666666;
+			line-height: 2.5rem;
+			margin-bottom: 25px;
+		}
+
+/*********FLEX LAYOUT**********/
+
+		.flexContainer {
+		    display: flex;
+		    flex-direction: row;
+		    margin-top:40px;
+		}
+
+		.flexItem {
+		    width: 50%;
+		    margin: auto;
+		}
+
+/*********QAUNTITY**********/
+
+		input {
+			font-size: 1.6rem;
+			font-family: 'Proza Libre', sans-serif;
+			background-color: transparent;
+			border: 1px solid black;
+			text-align: center;
+			width: 10%;
+			padding: 5px;
+			margin: 5px;
+			color: black;
+		}
+
+		label {
+			display: block;
+			font-family: 'Proza Libre', sans-serif;
+			font-size: 1rem;
+			margin-bottom: 5px;
+		}
+
+		button {
+			background-color: black;
+		    border: none;
+		    color: white;
+		    padding-left: 10px;
+		    padding-right: 10px;
+		    padding-top: 6px;
+		    padding-bottom: 8.5px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 1.6rem;
+
+		}
+
+		.cartButton {
+			margin-left: 50px;
+			font-size: 1.4rem;
+			width: 30%;
+			font-family: 'Proza Libre', sans-serif;
+		}
+
+		.cartButton:hover{
+			margin-left: 50px;
+			font-size: 1.4rem;
+			font-family: 'Proza Libre', sans-serif;
+			background-color: #D6B343;
+		}
+
+		button:focus {
+			outline:0;
+
+		}
+
+/*********** MOBILE ********** */
+
+		@media all and (max-width: 480px) {
+
+		.flexContainer {
+			flex-direction: column;
+		}
+
+		.flexItem {
+			width: 75%
+		}
+
+
+		img {
+			width: 100%;
+			margin-top: -20%;
+			margin-bottom: -10%;
+		}
+
+		.cartButton {
+			float: right;
+			width: 100%;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+
+
+	</style>
+</head>
+
+
+	<div class="flexContainer">
+	    <div class="flexItem">
+	    	<img src="images/coconutGinger2.jpg" alt="">
+	    </div>
+
+	    <div class="flexItem">
+
+			<h2>coconut ginger</h2>
+
+	    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi obcaecati repudiandae molestias esse dicta eligendi magni culpa adipisci expedita facere nesciunt nihil aliquam ab cum suscipit dignissimos, fuga, voluptate, numquam.</p>
+
+  
+	        <label for="qty"><abbr title="Quantity">QTY</abbr></label>
+	        <button id="down" onclick="modify_qty(-1)">-</button>
+	        <input id="qty" value="0" />
+	        <button id="up" onclick="modify_qty(1)">+</button>
+
+	        <button class="cartButton">add to cart</button>
+
+	    </div>
+	</div>
+
+<script>
+	function modify_qty(val) {
+	    var qty = document.getElementById('qty').value;
+	    var new_qty = parseInt(qty,10) + val;
+	    
+	    if (new_qty < 0) {
+	        new_qty = 0;
+	    }
+	    
+	    document.getElementById('qty').value = new_qty;
+	    return new_qty;
+	}
+</script>
+<body>

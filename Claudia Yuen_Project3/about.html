@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Us</title>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Montserrat|Proza+Libre:400,400i" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="css/TypeNavFoot.css" rel="stylesheet">
+	<link href="css/styleAbout.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<!-- ********* HEADER *********-->
+
+	<div class="wrapper flexParent">
+			<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+			<nav>
+				<div class="fa fa-bars fa-3x menuIcon"></div> <!-- adding class of menuIcon -->
+				<ul class="mainNav">
+					<li><a href="about.html">about</a></li>
+					<li><a href="shop.html">shop</a></li>
+					<li><a href="contact.html">contact</a></li>
+					<li class="cartLink"><a href="######">cart</a></li>
+					<a href="####.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+				</ul>
+			</nav>
+	</div>
+
+
+<!-- ********* CONTENT *********-->
+
+<section>
+	<div class="wrapper">
+		<div class="column">
+			<h2>1. responsibly sourced beans</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima error accusamus sit numquam, tempora quaerat cum adipisci recusandae totam iusto dolorum similique, sunt maxime consequatur suscipit quo omnis, autem modi.</p>
+		</div>
+
+		<div class="column">
+			<h2>2. made in house</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima error accusamus sit numquam, tempora quaerat cum adipisci recusandae totam iusto dolorum similique, sunt maxime consequatur suscipit quo omnis, autem modi.</p>
+		</div>
+	</div>
+
+	<div class="wrapper second">
+		<div class="column">
+			<h2>3. inspired by our travels</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima error accusamus sit numquam, tempora quaerat cum adipisci recusandae totam iusto dolorum similique, sunt maxime consequatur suscipit quo omnis, autem modi.</p>
+		</div>
+
+		<div class="column">
+			<h2>4. care and transparency</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima error accusamus sit numquam, tempora quaerat cum adipisci recusandae totam iusto dolorum similique, sunt maxime consequatur suscipit quo omnis, autem modi.</p>
+		</div>
+	</div>
+</section>
+
+<!-- ********* FOOTER *********-->
+	<footer>
+		<div class="wrapper">
+			<div class="columnFooter">
+				<p>525 King Street West </br>Toronto, Ontario</br>MJ2 3S8</p>
+			</div>
+
+
+			<div class="columnFooter">
+				<p>Tel: 416 990 0037 </br>Email: hello@aphelionchocolates.com</p>
+			</div>
+
+		
+			<div class="columnFooter">
+				<i class="fa fa-instagram fa-2x"/></i>
+				<i class="fa fa-twitter fa-2x"/></i>
+				<i class="fa fa-facebook-f fa-2x"/></i>
+			</div>
+		</div>
+	</footer>
+
+<!-- ********* HAMBURGER MENU JQUERY *********-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+	$(function() {
+
+
+	// on click on the burger, display the navigation menu
+	$('.menuIcon').on('click', function(){
+		console.log('menu was clicked');
+
+		$('.mainNav').toggleClass('showNav');
+
+		$(this).toggleClass('fa-close'); //if theres bars toggle close vic versa
+		$(this).toggleClass('fa-bars');
+
+		// $(this).toggleClass('fa-bars').toggleClass('fa-close'); //chaining method
+	});
+
+	$('.mainNav a').on('click', function(){
+		$('.mainNav').toggleClass('showNav');
+		$('.menuIcon').toggleClass('fa-bars').toggleClass('fa-close');
+	});
+
+});
+
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="aphelion chocolates">
+	<meta name="keywords" content="aphelion, chocolate, toronto">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Home</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Montserrat|Proza+Libre:400,400i" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="jqueryPlugins/distViewport/animate.css" />
+
+	<link href="css/TypeNavFoot.css" rel="stylesheet">
+	<link href="css/styleHome.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!-- ********* HEADER *********-->
+
+	<div class="wrapper flexParent">
+		<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+		<nav>
+			<div class="fa fa-bars fa-3x menuIcon"></div> <!-- adding class of menuIcon -->
+			<ul class="mainNav">
+				<li><a href="about.html">about</a></li>
+				<li><a href="shop.html">shop</a></li>
+				<li><a href="contact.html">contact</a></li>
+				<li class="cartLink"><a href="######">cart</a></li>
+				<a href="####.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+			</ul>
+		</nav>
+	</div>
+
+<!-- ********* ASTRONAUT *********-->
+<section>
+	<div class="wrapper">
+		  <div class="column astronaut">
+			  <div class="post">
+			  	<img src="images/Astronaut.png" alt="">
+			  </div>
+		  </div>
+
+		  <div class="column smallBatch">
+			<h1>small batch.</br>single origin.</h1>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident reprehenderit cumque, voluptatem repellendus! Vitae odio, modi, quibusdam corporis quas voluptatem aut sit laboriosam laborum eius ex ullam impedit ea illo.</p>
+		</div>
+	</div>
+</section>
+	
+<!-- ********* BALLET DANCER *********-->
+
+<section>
+	<div class="wrapper">
+		<div class="column clarityText">
+			<h2>clarity of flavor</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo accusantium illum assumenda impedit adipisci vero labore necessitatibus aspernatur animi quibusdam eveniet, laudantium, sed nemo pariatur suscipit mollitia quos dignissimos dolore.</p>
+
+			<h3><a href="about.html">learn more</a></h3>
+		</div>
+
+		 <div class="column ballet">
+			 <div class="post">
+				<img src="images/Ballerina.png" alt="">
+			</div>
+
+			<div class="column truffle2">
+				<div class="post">
+			 		<img src="images/truffle2.png" alt="">
+			 	</div>
+		 	</div>
+		 </div>
+	</div>
+</section>
+
+<!-- ********* CLIMBER *********-->
+
+<section>
+	<div class="wrapper">
+		  <div class="column climbing">
+
+			  	<div class="post">
+			  		<img src="images/Climbing.png" alt="">
+			  	</div>
+		  
+			  	<div class="column truffle1">	
+			  		<div class="post">  	
+			 			<img src="images/truffle1.png" alt="">
+			 		</div>
+			  	</div>
+		</div>
+
+		  <div class="column">
+			  	<h2>bean to bar</h2>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo accusantium illum assumenda impedit adipisci vero labore necessitatibus aspernatur animi quibusdam eveniet, laudantium, sed nemo pariatur suscipit mollitia quos dignissimos dolore.</p>
+
+				<h3><a href="shop.html">shop now</a></h3>
+		  </div>
+	</div>
+</section>
+
+<!-- ********* CONTACT PHONE *********-->
+
+<section>
+<div class="wrapper">
+	<div class="column contact">
+
+		<h2>contact us</h2>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum libero, quod laborum consequuntur odio tempora adipisci quo. Sed ut expedita architecto, et provident iste laudantium nobis ipsa consectetur nemo.</p>
+
+		<h3><a href="contact.html">say hello</a></h3>
+	</div>
+
+	 <div class="column phone">
+		 <div class="post"> 
+		 	<img src="images/phone.png" alt="">
+		 </div>
+
+	 	<div class="column truffle3">
+		 	<div class="post"> 
+		 		<img src="images/truffle3.png" alt="">
+		 	</div>
+	 	</div>
+	 </div>
+</div>
+</section>
+
+<!-- ********* FOOTER *********-->
+	<footer>
+		<div class="wrapper">
+			<div class="columnFooter">
+				<p>525 King Street West </br>Toronto, Ontario</br>MJ2 3S8</p>
+			</div>
+
+
+			<div class="columnFooter">
+				<p>Tel: 416 990 0037 </br>Email: hello@aphelionchocolates.com</p>
+			</div>
+
+		
+			<div class="columnFooter">
+				<i class="fa fa-instagram fa-2x"/></i>
+				<i class="fa fa-twitter fa-2x"/></i>
+				<i class="fa fa-facebook-f fa-2x"/></i>
+			</div>
+		</div>
+	</footer>
+
+
+
+<!-- ********* VIEPORT ANIMATION JQUERY *********-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="jqueryPlugins/distViewport/viewportchecker.js"></script> 
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery('.post').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
+	    offset: 100    
+	   });   
+});            
+</script>
+
+<!-- ********* HAMBURGER MENU JQUERY *********-->
+
+<script>
+	$(function() {
+
+
+	// on click on the burger, display the navigation menu
+	$('.menuIcon').on('click', function(){
+		console.log('menu was clicked');
+
+		$('.mainNav').toggleClass('showNav');
+
+		$(this).toggleClass('fa-close'); //if theres bars toggle close vic versa
+		$(this).toggleClass('fa-bars');
+
+		// $(this).toggleClass('fa-bars').toggleClass('fa-close'); //chaining method
+	});
+
+	$('.mainNav a').on('click', function(){
+		$('.mainNav').toggleClass('showNav');
+		$('.menuIcon').toggleClass('fa-bars').toggleClass('fa-close');
+	});
+
+});
+
+</script>
+
+</body>
+</html>

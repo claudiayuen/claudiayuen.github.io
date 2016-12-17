@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Contact Us</title>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Montserrat|Proza+Libre:400,400i" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="css/TypeNavFoot.css" rel="stylesheet">
+	<link href="css/styleContact.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- ********* HEADER *********-->
+
+	<div class="wrapper flexParent">
+			<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+			<nav>
+				<div class="fa fa-bars fa-3x menuIcon"></div> <!-- adding class of menuIcon -->
+				<ul class="mainNav">
+					<li><a href="about.html">about</a></li>
+					<li><a href="shop.html">shop</a></li>
+					<li><a href="contact.html">contact</a></li>
+					<li class="cartLink"><a href="######">cart</a></li>
+					<a href="####.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+				</ul>
+			</nav>
+	</div>
+
+<!-- ********* CONTENT *********-->
+
+<section>
+	<div class="wrapper">
+		<div class="column">
+
+			<h2>contact us</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum libero, quod laborum consequuntur odio tempora adipisci quo. Sed ut expedita architecto, et provident iste laudantium nobis ipsa consectetur nemo.</p>
+
+
+			<div class="form">
+
+				<input type="text" class="name" placeholder="first name">
+				<input type="text" class="name" placeholder="last name">
+				<input type="text" class="name" placeholder="email">
+				<input type="text" class="name" placeholder="phone number">
+
+				<textarea name="message" class="#####" cols="30" rows="10" placeholder="Write your message here"></textarea>
+
+				<input type="submit" value="submit" class="submitButton">
+
+			</div>
+		</div>
+
+		 <div class="column">
+
+			<div class="googleMap">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1671904255904!2d-79.40043038497934!3d43.6446897609999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34dec7457437%3A0x6f5319ab2f44ae48!2s525+King+St+W%2C+Toronto%2C+ON+M5V!5e0!3m2!1sen!2sca!4v1480741739780" width="400" height="300" frameborder="0" style="border:0" allowfullscreen>
+				</iframe>
+			</div>
+
+			<h3>Hours</h3>
+			<p>
+				Monday: Closed </br>
+				Tuesday: 10am – 7pm </br>
+				Wednesday: 10am – 7pm </br>
+				Thursday: 10am – 8pm </br>
+				Friday-Sunday: 9am – 9pm </br>
+			</p>
+
+		 </div>
+	</div>
+</section>
+
+
+<!-- ********* FOOTER *********-->
+	<footer>
+		<div class="wrapper">
+			<div class="columnFooter">
+				<p>525 King Street West </br>Toronto, Ontario</br>MJ2 3S8</p>
+			</div>
+
+
+			<div class="columnFooter">
+				<p>Tel: 416 990 0037 </br>Email: hello@aphelionchocolates.com</p>
+			</div>
+
+		
+			<div class="columnFooter">
+				<i class="fa fa-instagram fa-2x"/></i>
+				<i class="fa fa-twitter fa-2x"/></i>
+				<i class="fa fa-facebook-f fa-2x"/></i>
+			</div>
+		</div>
+	</footer>
+
+<!-- ********* HAMBURGER MENU JQUERY *********-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+	$(function() {
+
+	// on click on the burger, display the navigation menu
+	$('.menuIcon').on('click', function(){
+		console.log('menu was clicked');
+
+		$('.mainNav').toggleClass('showNav');
+
+		$(this).toggleClass('fa-close'); //if theres bars toggle close vic versa
+		$(this).toggleClass('fa-bars');
+
+		// $(this).toggleClass('fa-bars').toggleClass('fa-close'); //chaining method
+	});
+
+	$('.mainNav a').on('click', function(){
+		$('.mainNav').toggleClass('showNav');
+		$('.menuIcon').toggleClass('fa-bars').toggleClass('fa-close');
+	});
+});
+
+</script>
+	
+</body>
+</html>
